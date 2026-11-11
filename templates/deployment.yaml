@@ -9,7 +9,7 @@ metadata:
     component: frontend
     purpose: deployment
 spec:
-  replicas: {{ .Values.deployments.replicas }}
+  replicas: {{ .Values.deployment.replicas }}
   # replicaset uses these labels to match pods
   selector:
     matchLabels:
